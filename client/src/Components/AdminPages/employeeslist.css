@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0;
+}
+
+.listContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table{
+    width: 80vw;
+    text-align: center;
+}
+
+table thead tr th{
+    height: 25px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+table tbody tr th{
+    width: 30px;
+    background: whitesmoke;
+    border-radius: 10px;
+}
+
+tbody tr{
+    border-bottom: 5px solid rgb(211, 18, 18);
+}
+
+table tbody tr:nth-child(even) {
+    background: lemonchiffon;
+}

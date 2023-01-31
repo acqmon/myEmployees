@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: 0;
+}
+
+.Container {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(220, 154, 154);
+}
+
+.header {
+    background: rgb(152, 208, 136);
+    width: 100vw;
+    height: 7%;
+}
+
+.header ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: large;
+}
+
+.navBar {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(88, 147, 248);
+    overflow: hidden;
+}
+
+.navcontainer {
+    list-style: none;
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navcontainer li {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10%;
+    position: relative;
+}
+
+.navcontainer li p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navcontainer li p:hover {
+    color: white;
+}
+
+.navcontainer .active p:hover {
+    color: blueviolet;
+}
+
+.navcontainer li p {
+    text-decoration: none;
+}
+
+.active {
+    background: rgb(220, 154, 154);
+}
+
+.active p::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: rgb(88, 147, 248);
+    border-radius: 50%;
+    box-shadow: 10px 10px 0 rgb(220, 154, 154);
+}
+
+.active p::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: rgb(88, 147, 248);
+    border-radius: 50%;
+    box-shadow: 10px -10px 0 rgb(220, 154, 154);
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: row;
+    height: 93%;
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.noncontent{
+    display: none;
+}
